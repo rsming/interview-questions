@@ -3,6 +3,7 @@ This repository will have interview questions / links / code samples
 
 ## Java 
 
+ - [Java questions](./java/README.md)
 
 ## Multithreading
 
@@ -10,6 +11,7 @@ This repository will have interview questions / links / code samples
 
 ## Spring
 
+ - [Spring questions](./spring/README.md)
 
 ## Hibernate
 
