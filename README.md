@@ -17,7 +17,8 @@ This repository will have interview questions / links / code samples
 ## Javascript
 
 
-## ReactJS
+## React
 
+ - [React questions](./react/README.md)
 
 ## Math
