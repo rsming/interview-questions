@@ -33,3 +33,16 @@ This repository will have interview questions / links / code samples
 ## Unix
 
  - [Unix questions](./unix/README.md)
+
+## Agile
+
+ - [Agile questions](./agile/README.md)
+
+## CI
+
+ - [Continuous Integration questions](./continuous-integration/README.md)
+ 
+## AWS
+
+ - [AWS questions](./aws/README.md)
+ 
