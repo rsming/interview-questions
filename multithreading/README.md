@@ -1,6 +1,6 @@
 [Back](../README.md)
 
-# Multithreading
+# Multithreading questions
 
 ## concurency package
 
