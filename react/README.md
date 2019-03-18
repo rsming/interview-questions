@@ -21,6 +21,28 @@ src
 
 ## How to build React component
 
+```javascript
+class AsyncSelect extends React.Component {
+
+    constructor(props) {
+        super(props);
+        ...
+    }
+
+    componentDidMount() {
+        ...
+    }
+    render() {
+        return (
+            <div id={this.dropdownContainerId} className="control select is-primary dropdown">
+            ...
+            </div>
+        );
+    }
+}
+
+export default AsyncSelect;
+```
 
 ## Other resources
 
