@@ -6,6 +6,6 @@
 
  - Sprint Planning
  - Daily Scrum
- - Story Board
+ - Story Board / Cards
  - Sprint Review
  - Sprint Retrospective
