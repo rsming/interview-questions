@@ -51,7 +51,7 @@ G1 collector will replace the CMS collector since it’s more performance effici
  
 Unreferenced objects:
 
- - By nulling a reference:
+ - By nulling a reference
  - By assigning a reference to another
  - By anonymous object
  
