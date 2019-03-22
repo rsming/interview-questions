@@ -7,6 +7,6 @@
   - Spring IoC
   - SpringBoot
   - Spring AOP
-  - Spring Web Services (RestController)
+  - Spring Web Services (RestController) / actuator
   - Spring Data / Spring Data JPA
   - Spring Security
