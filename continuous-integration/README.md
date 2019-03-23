@@ -11,3 +11,7 @@
  - Bamboo
 
 ## Docker / Ansible 
+
+## GIT Fetch vs Pull
+
+git pull = git fetch + git merge
