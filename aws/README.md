@@ -9,3 +9,4 @@
  - Security Groups
  - Load Balancer
  - API Gateway 
+ - SNS / SQS
