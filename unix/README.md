@@ -14,3 +14,12 @@ result:
 ## How to view log file
 
 less
+
+| COMMAND | DESCRIPTION |
+| :------ | :---------- |
+| g  <  ESC-< | Go to first line in file (or line N).         |
+| G  >  ESC-> | Go to last line in file (or line N).          |
+| /pattern    | Search forward for (N-th) matching line.      |
+| ?pattern    | Search backward for (N-th) matching line.     |
+| n           | Repeat previous search (for N-th occurrence). |
+| N           | Repeat previous search in reverse direction.  |
