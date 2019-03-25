@@ -32,6 +32,7 @@ class AsyncSelect extends React.Component {
     componentDidMount() {
         ...
     }
+    
     render() {
         return (
             <div id={this.dropdownContainerId} className="control select is-primary dropdown">
