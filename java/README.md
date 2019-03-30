@@ -40,10 +40,6 @@
  
  G1 (Garbage First) Garbage Collector is designed for applications running on multi-processor machines with large memory space. It’s available since JDK7 Update 4 and in later releases.
  
-## What is new in Java 11
-
-
-
 G1 collector will replace the CMS collector since it’s more performance efficient.
 
  1. unreferenced objects are identified and marked as ready for GC
@@ -59,3 +55,4 @@ Unreferenced objects:
  - By assigning a reference to another
  - By anonymous object
  
+## What is new in Java 11
