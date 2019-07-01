@@ -8,10 +8,10 @@
 
 result:
 
-``
+```
 COMMAND  PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 java    6699 rustam   81u  IPv6 0xdb2c7da1a910fdd7      0t0  TCP *:8086 (LISTEN)
-``
+```
 
 
 ## How to view log file
