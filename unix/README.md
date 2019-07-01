@@ -4,11 +4,14 @@
 
 ## How to check if port 80 taken
 
-``sudo netstat -tulpn | grep :80``
+``sudo lsof -i tcp:80``
 
 result:
 
-``tcp6       0      0 :::80                   :::*                    LISTEN      3865/java``
+``
+COMMAND  PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+java    6699 rustam   81u  IPv6 0xdb2c7da1a910fdd7      0t0  TCP *:8086 (LISTEN)
+``
 
 
 ## How to view log file
