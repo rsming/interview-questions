@@ -27,3 +27,7 @@ less
 | n                | Repeat previous search (for N-th occurrence). |
 | N                | Repeat previous search in reverse direction.  |
 | q  :q  Q  :Q  ZZ | Exit.                                         |
+
+### In real time
+
+``tail -f log_name``
