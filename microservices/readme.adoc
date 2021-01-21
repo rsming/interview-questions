@@ -5,6 +5,19 @@
   - Database Per Service
   - Shared Database
   - Saga Pattern
+ 
+A Saga is basically a sequence of local transactions. For every transaction performed within a Saga, the service performing the transaction publishes an event. The subsequent transaction is triggered based on the output of the previous transaction. And if one of the transactions in this chain fails, the Saga executes a series of compensating transactions to undo the impact of all the previous transactions
+
   - API Composition
+  
+In this pattern, an API Composer invokes other microservices in the required order. And after fetching the results it performs an in-memory join of the data before providing it to the consumer.
+  
   - CQRS
+  
+`CQRS`, or Command Query Responsibility Segregation, is an attempt to get around the issues with API Composition pattern.
+
+An application listens to domain events from other microservices and updates the view or query database. You can serve complex aggregation queries from this database. You could optimize the performance and scale up the query microservices accordingly.
+
   - Event Sourcing
+
+In event sourcing, you store the state of the entity or the aggregate as a sequence of state changing events. A new event is created whenever there is an update or an insert. The event store is used to store the events.
