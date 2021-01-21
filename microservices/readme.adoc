@@ -1,0 +1,10 @@
+= Microservices =
+
+== Patterns ==
+
+  - Database Per Service
+  - Shared Database
+  - Saga Pattern
+  - API Composition
+  - CQRS
+  - Event Sourcing
