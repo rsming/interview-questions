@@ -25,7 +25,7 @@ An application listens to domain events from other microservices and updates the
 
 In event sourcing, you store the state of the entity or the aggregate as a sequence of state changing events. A new event is created whenever there is an update or an insert. The event store is used to store the events.
 
-== architecrture ==
+== Architecrture ==
 
 Microservices register / deregister in the `registry` [`Eureka`, `Zookeeper`, `Consul`]
 
