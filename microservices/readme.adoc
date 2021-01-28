@@ -3,7 +3,10 @@
 == Patterns ==
 
   - Database Per Service
-  - Shared Database
+  - Shared Database (antipattern)
+
+This can cause problen if one team / microservice decided to change DB / credentials / ...
+
   - Saga Pattern
  
 A Saga is basically a sequence of local transactions. For every transaction performed within a Saga, the service performing the transaction publishes an event. The subsequent transaction is triggered based on the output of the previous transaction. And if one of the transactions in this chain fails, the Saga executes a series of compensating transactions to undo the impact of all the previous transactions
@@ -21,3 +24,23 @@ An application listens to domain events from other microservices and updates the
   - Event Sourcing
 
 In event sourcing, you store the state of the entity or the aggregate as a sequence of state changing events. A new event is created whenever there is an update or an insert. The event store is used to store the events.
+
+== architecrture ==
+
+Microservices register / deregister in the `registry` [`Eureka`, `Zookeeper`, `Consul`]
+
+Add additional HTTP header (`Access-Control-Allow-Origin: *`) to allow `cross origin` because microservices hosted on the different servers.
+
+`Domino effect` - failure in one microservice propagades to another. To avoid this we need to invoke microservice via proxy `circuit breaker` [`Hystrix`, `JRugged`]
+
+In front of microservices there should be Gateway for authentication, registry access, API translation, SSL termination [`Zuul`, `Netty`, `Finagle`]
+
+Registry decides which mis=croservice to redirect request to. It can use several loadballancing strategies. Load balancers are [`Ribbon`, `Meraki`]
+
+Monitoring tools [`Kibana`, `Grafana`, `Splunk`]
+
+Log aggregators [`LogStash`, `Splunk`, `PaperTrail`]
+
+Performance stat aggregators: [`DropWizard`, `Actuator`, `Prometheus`]
+
+`Correlation Id` need to be added to log data to identify same call events and `originator-id:ms-id` to create chain of events. Tracing applications: [`Dapper`, `HTrace`, `Zipkin`]
