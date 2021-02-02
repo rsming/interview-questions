@@ -43,7 +43,7 @@ Bean will be removed or destroyed from and JVM memory.
 
 ## Spring Bean Scopes
 
-  - singleton(default*)
+  - singleton (default*)
 
 Scopes a single bean definition to a single object instance per Spring IoC container.
 
