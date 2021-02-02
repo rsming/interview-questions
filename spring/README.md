@@ -26,6 +26,7 @@ As soon as bean created and It will be instantiated and loaded into ApplicationC
 Spring container will create a bean id, scope, default values based on the bean definition.
 
   - Post-initialization
+
 Spring provides Aware interfaces to access application bean meta-data details and callback methods to hook into the bean life cycle to execute custom application-specific logic.
 
   - Ready to Serve
