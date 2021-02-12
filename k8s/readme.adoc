@@ -1,3 +1,71 @@
 link:../README.md[Back]
 
 = kubernetes =
+
+image::./k8s-cluster.png[]
+
+== benefits ==
+
+  - orchestrate containers
+  - zero-downtime deployment
+  - self healing
+  - scale containers
+
+== building blocks ==
+
+image::./k8s-building-blocks.png[]
+
+  - deployment (provides declarative updates for Pods and ReplicaSets)
+  - replicaSet (A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often used to guarantee the availability of a specified number of identical Pods)
+  - pod
+  - service (single point of entry to access one or more pods) IP address is reliable
+  - storage
+
+== services ==
+
+  - ClusterIP - for inner claster communications (invisible outside the cluster without `port fowarding`)
+  - NodePort - expose the service
+  - LoadBalancer - expose the service ans act as a load balancer
+  - ExternalName - maps service (proxy to external service) to DNS name
+
+== storage ==
+
+  - Ephemeral storage (emptyDir) has lifetime of the pod
+  - Persistent storage (third party / cloud / ...)
+  - PersistentVolumes, PersistentVolumeClaims and StorageClasses
+  - ConfigMaps (key/value pairs)
+  - Secrets
+
+image::./k8s-persistent-volume-workflow.png[]
+
+== commands ==
+
+```
+kubectl scale deployment [deployment-name] --replicas=5
+kubectl logs [pod-name]
+kubectl logs [pod-name] -c [container-name]
+kubectl logs -p [pod-name] # view logs for previously running logs
+kubectl logs -f [pod-name] # stream pod's log
+kubectl describe pod [pod-name]
+kubectl get all
+kubectl get pod [pod-name] -o yaml
+kubectl get deployment [deployment-name] -o yaml
+kubectl exec [pod-name] -it sh
+kubectl run ????
+kubectl create
+kubectl apply
+kubectl 
+kubectl 
+kubectl 
+kubectl 
+```
+
+== k8s web ui (dashboard) ==
+
+https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+  - `kubectl apply [dashboard-yaml-url]`
+  - `kubectl describe secret -n kube-system`
+  - locate the kubernetes.io/service-account-tocken and copy the tocken
+  - `kubectl proxy`
+  - visit the dashboard url and login using the tocken
