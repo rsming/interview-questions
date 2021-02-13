@@ -44,7 +44,7 @@ This repository will have interview questions / links / code samples
 
 ## AWS
 
- - [AWS questions](./aws/README.md)
+ - [AWS questions](./aws/readme.adoc)
 
 ## DevOps
 
