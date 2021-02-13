@@ -51,13 +51,10 @@ kubectl get all
 kubectl get pod [pod-name] -o yaml
 kubectl get deployment [deployment-name] -o yaml
 kubectl exec [pod-name] -it sh
-kubectl run ????
-kubectl create
-kubectl apply
-kubectl 
-kubectl 
-kubectl 
-kubectl 
+kubectl create -f ./k8s --save-config --record
+kubectl apply -f ./k8s
+kubectl delete -f ./k8s
+kubectl port-forward [pod-name] [port-from:port-to]
 ```
 
 == k8s web ui (dashboard) ==
