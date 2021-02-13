@@ -1,0 +1,25 @@
+[Back](../README.md)
+
+= AWS questions =
+
+== AWS Services ==
+
+ - EC2
+ - S3 / S3 Glasier
+ - Security Groups
+ - Load Balancer
+ - API Gateway 
+ - SNS / SQS
+ - Cloudformation
+ 
+== Cloudformation ==
+
+```
+aws help
+aws ec2 describe-instances --region us-east-1
+aws cloudformation list-stacks --region us-east-1
+aws cloudformation validate-template --template-body file://visit.cform.yaml --region us-east-1
+aws cloudformation create-stack --template-body file://visit.cform.yaml --parameters file://dev.visit.json --stack-name visit --region us-east-1
+aws cloudformation delete-stack --stack-name visit --region us-east-1
+aws cloudformation describe-stack-events --stack-name visit --region us-east-1
+```
