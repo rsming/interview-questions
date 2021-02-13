@@ -1,4 +1,4 @@
-[Back](../README.md)
+link:../README.md[Back]
 
 = AWS questions =
 
