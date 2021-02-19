@@ -38,7 +38,7 @@ image::./k8s-building-blocks.png[]
 
 image::./k8s-persistent-volume-workflow.png[]
 
-== commands ==
+== k8s commands ==
 
 ```
 kubectl scale deployment [deployment-name] --replicas=5
@@ -55,6 +55,19 @@ kubectl create -f ./k8s --save-config --record
 kubectl apply -f ./k8s
 kubectl delete -f ./k8s
 kubectl port-forward [pod-name] [port-from:port-to]
+```
+
+== helm commands ==
+
+```
+helm lint ./stockreaper
+helm install stockreaper ./stockreaper
+helm uninstall stockreaper
+helm upgrade stockreaper
+helm ls --all
+helm get all [release]
+helm get manifest stockreaper
+helm install --generate-name --dry-run --debug stockreaper/charts/frontend
 ```
 
 == k8s web ui (dashboard) ==
