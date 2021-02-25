@@ -47,26 +47,38 @@ kubectl logs [pod-name] -c [container-name]
 kubectl logs -p [pod-name] # view logs for previously running pods
 kubectl logs -f [pod-name] # stream pod's log
 kubectl describe pod [pod-name]
-kubectl get all
+kubectl get namespaces --show-labels
+kubectl get all -n=[namespace-name]
 kubectl get pod [pod-name] -o yaml
+kubectl get ingress -n=[namespace-name]
 kubectl get deployment [deployment-name] -o yaml
 kubectl exec [pod-name] -it sh
-kubectl create -f ./k8s --save-config --record
-kubectl apply -f ./k8s
-kubectl delete -f ./k8s
+kubectl create namespace [namespace-name]
+kubectl create secret tls [secret-name] -n=[namespace-name] --key=[path-to-privkey] --cert=[path-to-cert]
+kubectl create -n=[namespace-name] -f [folder] --save-config --record
+kubectl apply -n=[namespace-name] -f [folder]
+kubectl delete -f [folder]
+kubectl delete namespaces [namespace-name]
 kubectl port-forward [pod-name] [port-from:port-to]
+```
+
+== minikube ==
+
+```
+minikube start
+minikube addons enable ingress
 ```
 
 == helm commands ==
 
 ```
-helm lint ./stockreaper
-helm install stockreaper ./stockreaper
-helm uninstall stockreaper
-helm upgrade stockreaper
+helm lint [folder]
+helm install [release-name] [folder]
+helm uninstall [release-name]
+helm upgrade [release-name]
 helm ls --all
-helm get all [release]
-helm get manifest stockreaper
+helm get all [release-name]
+helm get manifest [release-name]
 helm install --generate-name --dry-run --debug stockreaper/charts/frontend
 ```
 
