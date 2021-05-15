@@ -13,7 +13,16 @@
 
 ```HashMap``` is not thread safe. Use ``Collections.synchronizedMap()`` or ``java.util.concurrent.ConcurrentHashMap``
 
-## Lanmda
+## Java Memory Model
+
+http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+
+The Java memory model used internally in the JVM divides memory between thread stacks and the heap.
+Each thread running in the Java virtual machine has its own thread stack.
+
+The thread stack also contains all local variables for each method being executed (all methods on the call stack). A thread can only access it's own thread stack. Local variables created by a thread are invisible to all other threads than the thread who created it. Even if two threads are executing the exact same code, the two threads will still create the local variables of that code in each their own thread stack. Thus, each thread has its own version of each local variable.
+
+## Functional Programming
 
 
 ## Inheritance / Incapsulation / Polymorphism
