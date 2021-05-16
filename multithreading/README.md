@@ -18,6 +18,9 @@ A thread often acts in response to the action of another thread. If the other th
 ## Deadlock
 
 
+## ThreadLocal
+
+The `TheadLocal` construct allows us to store data that will be accessible only by a specific thread.
 
 ## What new in multithreading in Java 8
 
