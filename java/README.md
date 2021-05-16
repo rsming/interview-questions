@@ -91,8 +91,4 @@ Unreferenced objects:
  - By assigning a reference to another
  - By anonymous object
 
-## ThreadLocal
-
-The `TheadLocal` construct allows us to store data that will be accessible only by a specific thread.
-
 ## What is new in Java 11
