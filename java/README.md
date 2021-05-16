@@ -16,6 +16,7 @@
 ## Java Memory Model
 
 http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+
 https://www.baeldung.com/java-stack-heap
 
 The Java memory model used internally in the JVM divides memory between thread stacks and the heap.
@@ -89,5 +90,9 @@ Unreferenced objects:
  - By nulling a reference
  - By assigning a reference to another
  - By anonymous object
- 
+
+## ThreadLocal
+
+The `TheadLocal` construct allows us to store data that will be accessible only by a specific thread.
+
 ## What is new in Java 11
