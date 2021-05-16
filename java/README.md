@@ -16,11 +16,37 @@
 ## Java Memory Model
 
 http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+https://www.baeldung.com/java-stack-heap
 
 The Java memory model used internally in the JVM divides memory between thread stacks and the heap.
 Each thread running in the Java virtual machine has its own thread stack.
 
 The thread stack also contains all local variables for each method being executed (all methods on the call stack). A thread can only access it's own thread stack. Local variables created by a thread are invisible to all other threads than the thread who created it. Even if two threads are executing the exact same code, the two threads will still create the local variables of that code in each their own thread stack. Thus, each thread has its own version of each local variable.
+
+### Stack Memory
+
+ * It grows and shrinks as new methods are called and returned respectively
+ * Variables inside stack exist only as long as the method that created them is running
+ * It's automatically allocated and deallocated when method finishes execution
+ * If this memory is full, Java throws `java.lang.StackOverFlowError`
+ * Access to this memory is fast when compared to heap memory
+ * This memory is threadsafe as each thread operates in its own stack
+
+### Heap Space
+
+Heap space in Java is used for dynamic memory allocation for Java objects and JRE classes at the runtime. New objects are always created in heap space and the references to this objects are stored in stack memory.
+
+ * It's accessed via complex memory management techniques that include Young Generation, Old or Tenured Generation, and Permanent Generation
+ * If heap space is full, Java throws java.lang.OutOfMemoryError
+ * Access to this memory is relatively slower than stack memory
+ * This memory, in contrast to stack, isn't automatically deallocated. It needs Garbage Collector to free up unused objects so as to keep the efficiency of the memory usage
+ * Unlike stack, a heap isn't threadsafe and needs to be guarded by properly synchronizing the code
+
+Memory model is further broken into smaller parts called generations:
+
+ * `Young Generation` – this is where all new objects are allocated and aged. A minor Garbage collection occurs when this fills up
+ * `Old or Tenured Generation` – this is where long surviving objects are stored. When objects are stored in the Young Generation, a threshold for the object's age is set and when that threshold is reached, the object is moved to the old generation
+ * `Permanent Generation` – this consists of JVM metadata for the runtime classes and application methods
 
 ## Functional Programming
 
