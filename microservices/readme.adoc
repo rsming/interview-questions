@@ -15,7 +15,7 @@ A `Saga` is basically a sequence of local transactions. For every transaction pe
 
   - API Composition
   
-In this pattern, an API Composer invokes other microservices in the required order. And after fetching the results it performs an in-memory join of the data before providing it to the consumer.
+In this pattern, an `API Composer` invokes other microservices in the required order. And after fetching the results it performs an in-memory join of the data before providing it to the consumer.
   
   - CQRS
   
