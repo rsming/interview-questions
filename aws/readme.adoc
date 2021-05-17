@@ -4,13 +4,23 @@ link:../README.md[Back]
 
 == AWS Services ==
 
- - EC2
  - S3 / S3 Glasier
  - Security Groups
  - Load Balancer
  - API Gateway 
  - SNS / SQS
  - Cloudformation
+ - EC2
+   - Type: AWS::EC2::VPC
+   - Type: AWS::EC2::InternetGateway
+   - Type: AWS::EC2::VPCGatewayAttachment
+   - Type: AWS::EC2::Subnet
+   - Type: AWS::EC2::SecurityGroup
+   - Type: AWS::EC2::RouteTable
+   - Type: AWS::EC2::Route
+   - Type: AWS::EC2::SubnetRouteTableAssociation
+   - Type: AWS::Route53::RecordSet
+   - Type: AWS::EC2::Instance
  
 == Cloudformation ==
 
