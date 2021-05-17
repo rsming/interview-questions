@@ -38,7 +38,7 @@ The thread stack also contains all local variables for each method being execute
 Heap space in Java is used for dynamic memory allocation for Java objects and JRE classes at the runtime. New objects are always created in heap space and the references to this objects are stored in stack memory.
 
  * It's accessed via complex memory management techniques that include Young Generation, Old or Tenured Generation, and Permanent Generation
- * If heap space is full, Java throws java.lang.OutOfMemoryError
+ * If heap space is full, Java throws `java.lang.OutOfMemoryError`
  * Access to this memory is relatively slower than stack memory
  * This memory, in contrast to stack, isn't automatically deallocated. It needs Garbage Collector to free up unused objects so as to keep the efficiency of the memory usage
  * Unlike stack, a heap isn't threadsafe and needs to be guarded by properly synchronizing the code
