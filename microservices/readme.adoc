@@ -11,7 +11,7 @@ This can cause problen if one team / microservice decided to change DB / credent
 
   - Saga Pattern
  
-A Saga is basically a sequence of local transactions. For every transaction performed within a Saga, the service performing the transaction publishes an event. The subsequent transaction is triggered based on the output of the previous transaction. And if one of the transactions in this chain fails, the Saga executes a series of compensating transactions to undo the impact of all the previous transactions. `"eventual consistency"`
+A `Saga` is basically a sequence of local transactions. For every transaction performed within a Saga, the service performing the transaction publishes an event. The subsequent transaction is triggered based on the output of the previous transaction. And if one of the transactions in this chain fails, the Saga executes a series of compensating transactions to undo the impact of all the previous transactions. `"eventual consistency"`
 
   - API Composition
   
@@ -37,7 +37,7 @@ Add additional HTTP header (`Access-Control-Allow-Origin: *`) to allow `cross or
 
 In front of microservices there should be Gateway for authentication, registry access, API translation, SSL termination [`Zuul`, `Netty`, `Finagle`]
 
-Registry decides which mis=croservice to redirect request to. It can use several loadballancing strategies. Load balancers are [`Ribbon`, `Meraki`]
+Registry decides which microservice to redirect request to. It can use several loadballancing strategies. Load balancers are [`Ribbon`, `Meraki`]
 
 Monitoring tools [`Kibana`, `Grafana`, `Splunk`]
 
