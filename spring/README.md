@@ -11,6 +11,11 @@
   - Spring Data / Spring Data JPA
   - Spring Security
 
+
+!!!!!! enableautoconfiguration
+what to do if application starts slow
+
+
 ## Spring Bean Lifecycles
 
   - Bean Definition
