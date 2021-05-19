@@ -11,6 +11,29 @@
   - Spring Data / Spring Data JPA
   - Spring Security
 
+## Spring transactions
+
+by default, rollback happens for runtime, unchecked exceptions only. The checked exception does not trigger a rollback of the transaction. 
+
+*isolation*
+
+ - `DEFAULT` Use the default isolation level of the underlying datastore.
+ - `READ_COMMITTED` A constant indicating that dirty reads are prevented; non-repeatable reads and phantom reads can occur.
+ - `READ_UNCOMMITTED` A constant indicating that dirty reads, non-repeatable reads and phantom reads can occur.
+ - `REPEATABLE_READ` A constant indicating that dirty reads and non-repeatable reads are prevented; phantom reads can occur.
+ - `SERIALIZABLE` A constant indicating that dirty reads, non-repeatable reads and phantom reads are prevented.
+
+*propagation*
+
+ - `MANDATORY` Support a current transaction, throw an exception if none exists.
+ - `NESTED` Execute within a nested transaction if a current transaction exists, behave like REQUIRED otherwise.
+ - `NEVER` Execute non-transactionally, throw an exception if a transaction exists.
+ - `NOT_SUPPORTED` Execute non-transactionally, suspend the current transaction if one exists.
+ - `REQUIRED` Support a current transaction, create a new one if none exists.
+ - `REQUIRES_NEW` Create a new transaction, and suspend the current transaction if one exists.
+ - `SUPPORTS` Support a current transaction, execute non-transactionally if none exists.
+
+
 
 !!!!!! enableautoconfiguration
 what to do if application starts slow
