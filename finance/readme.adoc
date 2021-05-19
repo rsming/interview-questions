@@ -1,1 +1,21 @@
+link:../README.md[Back]
 
+= finance =
+
+== Interest Rate Differential (IRD) ==
+
+IRDs simply measure the difference in interest rates between two securities. If one bond yields 5% and another 3%, the IRD would be 2 percentage points—or 200 basis points (bps). IRD calculations are most often used in fixed income trading, forex trading, and lending calculations.
+
+== Net Interest Rate Differential (NIRD) ==
+
+The NIRD is the amount the investor can expect to profit using a carry trade. Say an investor borrows $1,000 and converts the funds into British pounds, allowing them to purchase a British bond. If the purchased bond yields 7% and the equivalent U.S. bond yields 3%, then the IRD equals 4%, or 7% minus 3%. This profit is ensured only if the exchange rate between dollars and pounds remains constant.
+
+One of the primary risks involved with this strategy is the uncertainty of currency fluctuations. In this example, if the British pound were to fall in relation to the U.S. dollar, the trader may experience losses. Additionally, traders may use leverage, such as with a factor of 10-to-1, to improve their profit potential. If the investor leveraged borrowing by a factor of 10-to-1, they could make a profit of 40%. However, leverage could also cause larger losses if there are significant movements in exchange rates that go against the trade.
+
+== Internal Revenue Service (IRS) ==
+ 
+The Internal Revenue Service (IRS) is a U.S. government agency responsible for the collection of taxes and enforcement of tax laws
+
+== Bond ==
+
+A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental)
