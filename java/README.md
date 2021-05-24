@@ -51,6 +51,9 @@ Memory model is further broken into smaller parts called generations:
 
 ## Functional Programming
 
+Java `stream` operations are divided into `intermediate` and `terminal` operations. 
+
+Intermediate operations such as `filter()` return a new stream on which further processing can be done. Terminal operations, such as `forEach()`, mark the stream as consumed, after which point it can no longer be used further.
 
 ## Inheritance / Incapsulation / Polymorphism
 

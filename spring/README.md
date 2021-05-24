@@ -90,3 +90,28 @@ Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid i
   - global session
 
 Scopes a single bean definition to the lifecycle of a global HTTP Session. Typically only valid when used in a portlet context. Only valid in the context of a web-aware Spring ApplicationContext.
+
+## Conditional Beans ##
+
+Spring has introduced the `@Conditional` annotation that allows us to define custom conditions to apply to parts of our application context. Spring Boot builds on top of that and provides some pre-defined conditions so we don’t have to implement them ourselves.
+
+Pre-Defined Conditions:
+
+ * `@ConditionalOnProperty(value="module.enabled", havingValue = "true", matchIfMissing = true)`
+ * `@ConditionalOnExpression("${module.enabled:true} and ${module.submodule.enabled:true}")`
+ * `@ConditionalOnBean(OtherModule.class)`
+ * `@ConditionalOnMissingBean`
+ * `@ConditionalOnResource(resources = "/logback.xml")`
+ * `@ConditionalOnClass(name = "this.clazz.does.not.Exist")`
+ * `@ConditionalOnMissingClass(value = "this.clazz.does.not.Exist")`
+ * `@ConditionalOnJava(JavaVersion.EIGHT)`
+ * `@ConditionalOnSingleCandidate(DataSource.class)`
+ * `@ConditionalOnNotWebApplication`
+ * `@ConditionalOnCloudPlatform`
+
+## Bean Types ##
+
+ * `@Configuration` annotation indicates that a class declares one or more `@Bean` methods and may be processed by the Spring container to generate bean definitions and service requests for those beans at runtime.
+ * Spring `@Component` annotation is used to denote a class as Component. It means that Spring framework will autodetect these classes for dependency injection when annotation-based configuration and classpath scanning is used.
+ * `@Service` annotates classes at the service layer.
+ * `@Repository` annotates classes at the persistence layer, which will act as a database repository.
