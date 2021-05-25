@@ -122,4 +122,4 @@ the objects that form the backbone of your application and that are managed by t
 
 `@Component` is used on our classes, so Spring knows that it should add it. However, it only works, if we enabled a component scan for our application and our class is included. With a component scan, Spring will scan the entire classpath and will add all `@Component` annotated classes to the Spring Context (with adjustable Filtering).
 
-`@Service` can be used by “intent” istead of `@Component`. It will have the sane meaning.
+`@Service` can be used by “intent” istead of `@Component`. It will have the same meaning.
