@@ -12,7 +12,7 @@ This repository will have interview questions / links / code samples
 
 ## Spring
 
- - [Spring questions](./spring/README.md)
+ - [Spring questions](./spring/readme.adoc)
 
 ## Hibernate
 
