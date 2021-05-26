@@ -1,19 +1,19 @@
-[Back](../README.md)
+link:../README.md[Back]
 
-# Java questions
+= Java questions =
 
-## Collections package
+== Collections package ==
 
 
-### How HashMap works
+=== How HashMap works ===
 
- - ``hashCode()`` / ``equals()`` contract
- - backet per ``hashCode``, backet stored in ``LinkedList<Map.Entry>``
- - bakets organised as an array of backets, and retrieved by index = ``hashCode()`` % initial map size
+ - `hashCode()` / `equals()` contract
+ - backet per `hashCode`, backet stored in `LinkedList<Map.Entry>`
+ - bakets organised as an array of backets, and retrieved by index = `hashCode()` % initial map size
 
-```HashMap``` is not thread safe. Use ``Collections.synchronizedMap()`` or ``java.util.concurrent.ConcurrentHashMap``
+`HashMap` is not thread safe. Use `Collections.synchronizedMap()` or `java.util.concurrent.ConcurrentHashMap`
 
-## Java Memory Model
+== Java Memory Model ==
 
 http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 
@@ -24,7 +24,7 @@ Each thread running in the Java virtual machine has its own thread stack.
 
 The thread stack also contains all local variables for each method being executed (all methods on the call stack). A thread can only access it's own thread stack. Local variables created by a thread are invisible to all other threads than the thread who created it. Even if two threads are executing the exact same code, the two threads will still create the local variables of that code in each their own thread stack. Thus, each thread has its own version of each local variable.
 
-### Stack Memory
+=== Stack Memory ===
 
  * It grows and shrinks as new methods are called and returned respectively
  * Variables inside stack exist only as long as the method that created them is running
@@ -33,7 +33,7 @@ The thread stack also contains all local variables for each method being execute
  * Access to this memory is fast when compared to heap memory
  * This memory is threadsafe as each thread operates in its own stack
 
-### Heap Space
+=== Heap Space ===
 
 Heap space in Java is used for dynamic memory allocation for Java objects and JRE classes at the runtime. New objects are always created in heap space and the references to this objects are stored in stack memory.
 
@@ -49,19 +49,19 @@ Memory model is further broken into smaller parts called generations:
  * `Old or Tenured Generation` – this is where long surviving objects are stored. When objects are stored in the Young Generation, a threshold for the object's age is set and when that threshold is reached, the object is moved to the old generation
  * `Permanent Generation` – this consists of JVM metadata for the runtime classes and application methods
 
-## Functional Programming
+== Functional Programming ==
 
 Java `stream` operations are divided into `intermediate` and `terminal` operations. 
 
 Intermediate operations such as `filter()` return a new stream on which further processing can be done. Terminal operations, such as `forEach()`, mark the stream as consumed, after which point it can no longer be used further.
 
-## Inheritance / Incapsulation / Polymorphism
+== Inheritance / Incapsulation / Polymorphism ==
 
 
-## Overloading / Overwriting
+== Overloading / Overwriting ==
 
 
-## Garbage Collector
+== Garbage Collector ==
 
  - Serial Garbage Collector
  
@@ -94,4 +94,19 @@ Unreferenced objects:
  - By assigning a reference to another
  - By anonymous object
 
-## What is new in Java 11
+== What is new in Java 11
+
+== SOLID ==
+
+The SOLID concepts are
+
+ * The Single-responsibility principle: "There should never be more than one reason for a class to change." In other words, every class should have only one responsibility. 
+ * The Open–closed principle: "Software entities ... should be open for extension, but closed for modification."
+ * The Liskov substitution principle: "Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it". See also design by contract.
+ * The Interface segregation principle: "Many client-specific interfaces are better than one general-purpose interface."
+ * The Dependency inversion principle: "Depend upon abstractions, [not] concretions."
+
+== map() and flatMap() ==
+
+ - `map()` transalates objects for `Stream` and `Optional`
+ - `flatMap()` flattens collections for `Stream` and `Optional`

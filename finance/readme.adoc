@@ -63,3 +63,7 @@ A derivative is a financial security with a value that is reliant upon or derive
 == Holding Period ==
 
 A holding period is the amount of time the investment is held by an investor, or the period between the purchase and sale of a security. In a long position, the holding period refers to the time between an asset's purchase and its sale. In a short options position, the holding period is the time between when a short seller buys back the securities and when the security is delivered to the lender to close the short position.
+
+== Credit Risk ==
+
+Credit risk is the possibility of losing a lender takes on due to the possibility of a borrower not paying back a loan. Consumer credit risk can be measured by the five Cs: credit history, capacity to repay, capital, the loan's conditions, and associated collateral.
