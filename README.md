@@ -4,7 +4,7 @@ This repository will have interview questions / links / code samples
 
 ## Java 
 
- - [Java questions](./java/readme.adoc
+ - [Java questions](./java/readme.adoc)
 
 ## Multithreading
 
