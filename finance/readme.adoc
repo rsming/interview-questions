@@ -1,6 +1,7 @@
 link:../README.md[Back]
 
 = Finance Questions =
+:toc:
 
 == Interest Rate Differential (IRD) ==
 
