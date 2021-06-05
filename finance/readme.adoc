@@ -67,3 +67,31 @@ A holding period is the amount of time the investment is held by an investor, or
 == Credit Risk ==
 
 Credit risk is the possibility of losing a lender takes on due to the possibility of a borrower not paying back a loan. Consumer credit risk can be measured by the five Cs: credit history, capacity to repay, capital, the loan's conditions, and associated collateral.
+
+== Netting ==
+
+`Netting` entails offsetting the value of multiple positions or payments due to be exchanged between two or more parties. It can be used to determine which party is owed remuneration in a multiparty agreement. Netting is a general concept that has a number of more specific uses, including in the financial markets.
+
+== Collateral ==
+
+The term `collateral` refers to an asset that a lender accepts as security for a loan. Collateral may take the form of real estate or other kinds of assets, depending on the purpose of the loan. The collateral acts as a form of protection for the lender. That is, if the borrower defaults on their loan payments, the lender can seize the collateral and sell it to recoup some or all of its losses.
+ 
+== Haircut ==
+
+A `haircut` has two meanings. The term haircut is most commonly used when referencing the percentage difference between an asset's market value and the amount that can be used as collateral for a loan. There is a difference between these values because market prices change over time, which the lender needs to accommodate for. For example, if a person needs a $10,000 loan and wants to use their $10,000 stock portfolio as collateral, the bank is likely to recognize the $10,000 portfolio as worth only $5,000 in collateral. The $5,000 or 50% reduction in the asset's value, for collateral purposes, is called the haircut.
+
+== Accrued Interest ==
+
+In accounting, `accrued interest` refers to the amount of interest that has been incurred, as of a specific date, on a loan or other financial obligation but has not yet been paid out. Accrued interest can either be in the form of accrued interest revenue, for the lender, or accrued interest expense, for the borrower. The term accrued interest can also refer to the amount of bond interest that has accumulated since the last time a bond interest payment was made.
+
+== Tenor ==
+
+Tenor refers to the length of time remaining before a financial contract expires. It is sometimes used interchangeably with the term maturity, although the terms have distinct meanings. Tenor is used in relation to bank loans, insurance contracts, and derivative products.
+
+== Notional ==
+
+Notional value is a term often used to value the underlying asset in a derivatives trade. It can be the total value of a position, how much value a position controls, or an agreed-upon amount in a contract. This term is used when describing derivative contracts in the options, futures, and currency markets.
+
+```js
+Notional value = Contract size * underlying price
+```
