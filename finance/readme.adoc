@@ -1,10 +1,10 @@
 link:../README.md[Back]
 
-= Finance Questions =
+= Finance Questions
 
 :toc:
 
-== Interest Rate Differential (IRD) ==
+== Interest Rate Differential (IRD)
 
 IRDs simply measure the difference in interest rates between two securities. If one bond yields 5% and another 3%, the IRD would be 2 percentage points—or 200 basis points (bps). IRD calculations are most often used in fixed income trading, forex trading, and lending calculations.
 
