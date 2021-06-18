@@ -62,6 +62,18 @@ The NIRD is the amount the investor can expect to profit using a carry trade. Sa
 
 One of the primary risks involved with this strategy is the uncertainty of currency fluctuations. In this example, if the British pound were to fall in relation to the U.S. dollar, the trader may experience losses. Additionally, traders may use leverage, such as with a factor of 10-to-1, to improve their profit potential. If the investor leveraged borrowing by a factor of 10-to-1, they could make a profit of 40%. However, leverage could also cause larger losses if there are significant movements in exchange rates that go against the trade.
 
+== Netting ==
+
+`Netting` entails offsetting the value of multiple positions or payments due to be exchanged between two or more parties. It can be used to determine which party is owed remuneration in a multiparty agreement. Netting is a general concept that has a number of more specific uses, including in the financial markets.
+
+== Notional ==
+
+Notional value is a term often used to value the underlying asset in a derivatives trade. It can be the total value of a position, how much value a position controls, or an agreed-upon amount in a contract. This term is used when describing derivative contracts in the options, futures, and currency markets.
+
+```js
+Notional value = Contract size * underlying price
+```
+
 == Option ==
 
 Options are financial instruments that are derivatives based on the value of underlying securities such as stocks. An options contract offers the buyer the opportunity to buy or sell—depending on the type of contract they hold—the underlying asset. Unlike futures, the holder is not required to buy or sell the asset if they choose not to.
@@ -82,18 +94,6 @@ A sensitivity analysis determines how different values of an independent variabl
 A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.
 
 However, that practice is illegal in the U.S. for equities. A covered short is when a trader borrows the shares from a stock loan department; in return, the trader pays a borrow-rate during the time the short position is in place.
-
-== Netting ==
-
-`Netting` entails offsetting the value of multiple positions or payments due to be exchanged between two or more parties. It can be used to determine which party is owed remuneration in a multiparty agreement. Netting is a general concept that has a number of more specific uses, including in the financial markets.
-
-== Notional ==
-
-Notional value is a term often used to value the underlying asset in a derivatives trade. It can be the total value of a position, how much value a position controls, or an agreed-upon amount in a contract. This term is used when describing derivative contracts in the options, futures, and currency markets.
-
-```js
-Notional value = Contract size * underlying price
-```
 
 == Tenor ==
 
