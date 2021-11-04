@@ -6,6 +6,10 @@ This repository will have interview questions / links / code samples
 
  - [Java questions](./java/readme.adoc)
 
+## Patterns 
+
+ - [Patterns](./patterns/readme.adoc)
+
 ## Multithreading
 
  - [multithreading questions](./multithreading/README.md)
