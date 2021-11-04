@@ -5,10 +5,21 @@ link:../README.md[Back]
 == Creational design patterns ==
 
 === Factory Method Pattern ===
+
 === Abstract Factory Pattern ===
+
+Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.
+
 === Singleton Pattern ===
+
 === Prototype Pattern ===
+
+Prototype Pattern says that cloning of an existing object instead of creating new one and can also be customized as per the requirement.
+
+This pattern should be followed, if the cost of creating a new object is expensive and resource intensive.
+
 === Builder Pattern ===
+
 === Object Pool Pattern ===
 
 == Structural Pattern ==
@@ -19,7 +30,14 @@ link:../README.md[Back]
 === Decorator Pattern ===
 === Facade Pattern ===
 === Flyweight Pattern ===
+
+A Flyweight Pattern says that just "to reuse already existing similar kind of objects by storing them and create new object when no matching object is found".
+
 === proxy Pattern ===
+
+Simply, proxy means an object representing another object.
+
+According to GoF, a Proxy Pattern "provides the control for accessing the original object".
 
 == Behavioral Pattern ==
 
