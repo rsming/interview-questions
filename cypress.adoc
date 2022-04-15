@@ -2,10 +2,18 @@ link:../README.md[Back]
 
 = cypress.io questions =
 
+ - https://www.cypress.io/
+
 ### install ###
 
 ```bash
 npm install --save-dev cypress
+```
+
+### run cypress tests ###
+
+```bash
+npx cypress open
 ```
 
 ### aliasing ###
