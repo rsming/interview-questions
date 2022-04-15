@@ -67,3 +67,15 @@ describe('Settlement page loaded', () => {
 ...
 });
 ```
+
+### commands ###
+
+```js
+cy.get('[data-cy="...."]').
+    invoke()
+    dblclick()
+    check()
+    select()
+
+```
+
