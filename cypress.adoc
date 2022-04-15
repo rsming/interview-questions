@@ -31,3 +31,20 @@ describe('Settlement page loaded', () => {
     });
 });
 ```
+
+### before each ###
+
+```js
+describe('Settlement page loaded', () => {
+    beforeEach(() => {
+        cy.visit('http://localhost:3000/settlements');
+        cy.get('[data-cy="header-settlements"]').as('headerSpan')
+    });
+
+    it('page loaded by url', () => {
+        cy.get('[@headerSpan')
+            .invoke('text')
+            .should('equal', 'Reminda:Settlements');
+    });
+});
+```
