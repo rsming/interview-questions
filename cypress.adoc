@@ -17,3 +17,17 @@ npx cypress open
 ```
 
 ### aliasing ###
+
+```js
+describe('Settlement page loaded', () => {
+    it('page loaded by url', () => {
+        cy.visit('http://localhost:3000/settlements');
+
+        cy.get('[data-cy="header-settlements"]').as('headerSpan')
+
+        cy.get('[@headerSpan')
+            .invoke('text')
+            .should('equal', 'Reminda:Settlements');
+    });
+});
+```
