@@ -1,0 +1,7 @@
+### install ###
+
+```bash
+npm install --save-dev cypress
+```
+
+### aliasing ###
