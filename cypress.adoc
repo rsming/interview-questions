@@ -47,3 +47,23 @@ describe('Settlement page loaded', () => {
     });
 });
 ```
+
+### base parameters ###
+
+`cypress.json`
+
+```js
+{
+    "baseUrl": "http://localhost:3000"
+}
+```
+
+```js
+describe('Settlement page loaded', () => {
+    beforeEach(() => {
+        cy.visit('/settlements');
+        cy.get('[data-cy="header-settlements"]').as('headerSpan')
+    });
+...
+});
+```
