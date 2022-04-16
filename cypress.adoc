@@ -41,7 +41,7 @@ describe('Settlement page loaded', () => {
     });
 
     it('page loaded by url', () => {
-        cy.get('[@headerSpan')
+        cy.get('@headerSpan')
             .invoke('text')
             .should('equal', 'Reminda:Settlements');
     });
@@ -76,6 +76,54 @@ cy.get('[data-cy="...."]').
     dblclick()
     check()
     select()
-
+    trigger('mouseover')
 ```
+
+### assertions ###
+
+```js
+.should('exist')
+.should('not.exist')
+.should('be.visible')
+.should('not.be.visible')
+.should('have.class', 'CLASS-NAME')
+.should('contain')
+.should('not.contain')
+```
+
+### debugging ###
+
+```js
+ it('....', () => {
+     cy.visit('....');
+     cy.get('...')
+         .invoke('text')
+         .debug();
+});
+```
+
+### environment variables ###
+
+```bash
+export CYPRESS_MY_ENV_VARIABLE="value"
+```
+or
+
+```bash
+npx sypress open --env MY_ENV_VARIABLE="value"
+```
+
+or by adding to `cypress.json`
+
+```js
+{
+    ...
+    "env": {
+        "MY_ENV_VARIABLE": "value"
+    }
+}
+```
+
+to use `Cypress.env('MY_ENV_VARIABLE')` in the test js code
+
 
