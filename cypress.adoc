@@ -134,10 +134,10 @@ or by creating `cypress.env.json`
 
 to use `Cypress.env('MY_ENV_VARIABLE')` in the test js code
 
-### code completion ###
+### code completion for VS Code ###
 
 ```js
-/// <reference types="Cypress" \>
+/// <reference types="Cypress" />
 
 describe('Settlement page loaded', () => {
 ...
