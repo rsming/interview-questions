@@ -122,6 +122,7 @@ or by adding to `cypress.json`
         "MY_ENV_VARIABLE": "value"
     }
 }
+```
 
 or by creating `cypress.env.json`
 
@@ -129,7 +130,6 @@ or by creating `cypress.env.json`
 {
     "MY_ENV_VARIABLE": "value"
 }
-```
 ```
 
 to use `Cypress.env('MY_ENV_VARIABLE')` in the test js code
