@@ -1,4 +1,4 @@
-link:../README.md[Back]
+link:./README.md[Back]
 
 = cypress.io questions =
 
