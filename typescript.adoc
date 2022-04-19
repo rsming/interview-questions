@@ -13,7 +13,8 @@ function getLength(parm: string | string[]) {
 
 ```
 
-type definition
+=== type definition ===
+
 |===
 | Type | Predicate
 
@@ -35,3 +36,17 @@ type definition
 | array
 | Array.isArray(a)
 |===
+
+=== generics ===
+
+```js
+type StringArray = Array<string>;
+type ObjectWithNameArray = Array<{ name: string }>;
+
+interface Backpack<Type> {
+  add: (obj: Type) => void;
+  get: () => Type;
+}
+
+declare const backpack: Backpack<string>;
+```
