@@ -1,3 +1,25 @@
 link:./README.md[Back]
 
 = typescript questions =
+
+```js
+// union types
+type State = 'open' | 'closed' | 'minimised';
+
+// parameters of different types
+function getLength(parm: string | string[]) {
+    return parm.length;
+}
+
+```
+
+type definition
+
+| Type | Predicate |
+|------|-----------|
+|string    | typeof s === "string"
+|number    | typeof n === "number"
+|boolean   | typeof b === "boolean"
+|undefined | typeof undefined === "undefined"
+|function  | typeof f === "function"
+|array     |Array.isArray(a)
