@@ -57,20 +57,12 @@ This repository will have interview questions / links / code samples
 ## Microservices
 
  - [Microservices](./microservices/readme.adoc)
- 
-## Kubernetes
 
  - [Kubernetes](./k8s/readme.adoc)
- 
-## Finance
 
  - [Finance](./finance/readme.adoc)
- 
-## cypress.io
 
  - [cypress.io](./cypress.adoc)
- 
-## typescript
 
  - [typescript](./typescript.adoc)
 
